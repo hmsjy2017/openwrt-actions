@@ -1,5 +1,7 @@
 name: OpenWrt k2p CI
-on:
+on: 
+  schedule:
+     - cron:  0 7 * * 5
   push:
     branches:
       - master
